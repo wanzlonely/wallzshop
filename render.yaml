@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: walzshop
+    env: node
+    plan: free
+    region: singapore
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    autoDeploy: true
+
+    envVars:
+      - key: PORT
+        value: 3000
+      - key: CLOUDINARY_URL
+        value: cloudinary://752755986814642:yNldx7bfPZOOdi9Uf6DYzzgSM-c@dzqp5zphu
+      - key: CLOUDINARY_FOLDER
+        value: walzshop_bukti
+      - key: ADMIN_PASS
+        value: walzshopadmin2025
+      - key: JWT_SECRET
+        value: supersecretjwtkey2025
+      - key: ADMIN_PHONE
+        value: 6282298902274
+      - key: CALLMEBOT_KEY
+        value: jZuP696vBNsz
