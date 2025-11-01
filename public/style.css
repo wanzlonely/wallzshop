@@ -1,0 +1,31 @@
+:root{
+  --bg:#0f1724; --card:#0b1220; --text:#e6eef8; --muted:#9fb0c8; --accent:#4f46e5; --success:#10b981;
+}
+*{box-sizing:border-box;font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial}
+body{margin:0;background:linear-gradient(180deg,#071029 0%, #071a2b 100%);color:var(--text);-webkit-font-smoothing:antialiased}
+.app{min-height:100vh;display:flex;flex-direction:column}
+.header{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:rgba(255,255,255,0.02);backdrop-filter:blur(6px)}
+.brand{display:flex;align-items:center;color:var(--text);text-decoration:none;font-weight:700}
+.logo{width:40px;height:40px;border-radius:8px;margin-right:10px}
+.header-actions{display:flex;gap:8px;align-items:center}
+.search{padding:10px;border-radius:10px;border:0;min-width:200px;background:rgba(255,255,255,0.03);color:var(--text)}
+.container{flex:1;padding:18px;max-width:1100px;margin:0 auto;width:100%}
+.hero{padding:20px;border-radius:12px;margin-bottom:16px;background:linear-gradient(90deg, rgba(79,70,229,0.12), rgba(16,185,129,0.06))}
+.section-title{font-weight:700;margin:8px 0 12px;color:var(--text)}
+.game-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:12px}
+.game-card{background:var(--card);padding:10px;border-radius:10px;display:flex;flex-direction:column;gap:8px;text-decoration:none;color:var(--text)}
+.game-card img{width:100%;height:100px;object-fit:cover;border-radius:8px}
+.card{background:var(--card);padding:12px;border-radius:10px;margin-bottom:12px}
+.options-grid{display:flex;flex-wrap:wrap;gap:8px}
+.option-card{background:#071322;padding:10px;border-radius:10px;min-width:120px;cursor:pointer}
+.summary{background:linear-gradient(90deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:10px;border-radius:10px;margin:12px 0}
+.btn{padding:10px 12px;border-radius:10px;border:0;background:rgba(255,255,255,0.03);color:var(--text);cursor:pointer}
+.primary{background:var(--accent);color:#fff}
+.footer{display:flex;justify-content:space-around;padding:12px;background:rgba(255,255,255,0.02)}
+.back{display:inline-block;margin:8px 0;color:var(--muted);text-decoration:none}
+
+/* responsive tweaks */
+@media(min-width:900px){
+  .container{padding:28px}
+  .search{min-width:320px}
+}

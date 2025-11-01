@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Top Up Pulsa</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<div class="app">
+  <header class="header"><a href="index.html" class="brand"><img src="https://files.catbox.moe/hrtpys.jpg" class="logo">WALZSHOP</a></header>
+  <main class="container">
+    <a href="index.html" class="back">← Kembali ke Beranda</a>
+    <form id="topup-pulsa-form">
+      <section class="card">
+        <h3>1. Masukkan Nomor HP</h3>
+        <input id="phone-number" placeholder="Contoh: 0812xxxxxx">
+        <select id="operator-select"><option value="" disabled selected>Pilih Operator...</option></select>
+      </section>
+      <section class="card">
+        <h3>2. Pilih Nominal Pulsa</h3>
+        <div id="pulsa-list" class="options-grid"></div>
+      </section>
+      <section class="card">
+        <h3>3. Pilih Metode Pembayaran</h3>
+        <div id="payment-list" class="options-grid"></div>
+      </section>
+    </form>
+    <div id="summary-card" class="summary" style="display:none;">
+      <div id="summary-product-details" class="summary-product"></div>
+      <div id="summary-price" class="summary-price"></div>
+      <button id="confirm-button" class="btn primary" disabled>Pesan Sekarang</button>
+    </div>
+  </main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
